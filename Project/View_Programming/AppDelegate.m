@@ -22,7 +22,7 @@
 	_window = [[VPWindow alloc] init];
 	[_window setLogger:[self logger]];
 	[_window setDelegate:self];
-	//[_window setContentViewController:[[AppViewController alloc] initWithLogger:[self logger]]];
+	[_window setContentViewController:[[AppViewController alloc] initWithLogger:[self logger]]];
 	[_window makeKeyAndOrderFront:nil];
 }
 
